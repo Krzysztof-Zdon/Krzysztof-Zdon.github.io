@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffcc00;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 8px 0;
+    background-color: #ffcc00;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #222222;
+    background-size: cover;
+    background-position: center;
+    animation: backgroundImageFade 40s infinite;
+    transition: opacity 1s;
+}
+
+@keyframes backgroundImageFade {
+    0% {
+        background-image: url("/assets/images/starry_night.jpg");
+        opacity: 1;
+    }
+    33% {
+        background-image: url("/assets/images/starry_night_city.jpg");
+        opacity: 1;
+    }
+    66% {
+        background-image: url("/assets/images/Wheat_Field_with_Crows.jpg");
+        opacity: 1;
+    }
+    100% {
+        background-image: url("/assets/images/starry_night.jpg");
+        opacity: 1;
+    }
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 50px auto;
+}
