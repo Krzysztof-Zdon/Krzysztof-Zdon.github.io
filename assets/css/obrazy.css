@@ -6,14 +6,20 @@ body {
     padding: 0;
 }
 
-main {
-   text-decoration:none;
-}
-
 header {
     background-color: #ffcc00;
     padding: 20px;
     text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    /* text-decoration-color: #0000FF;  */
+    text-decoration: underline;
 }
 
 header nav a {
@@ -23,11 +29,6 @@ header nav a {
     font-weight: bold;
 }
 
-a {
-    text-decoration: none; /* Usuwa podkreślenie */
-    color: white; /* Ustawia kolor tekstu na biały */
-}
-
 footer {
     text-align: center;
     padding: 8px 0;
@@ -35,7 +36,6 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    z-index: 10;
 }
 
 .background {
@@ -44,31 +44,11 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #222222;
+    background-color: black;
     background-size: cover;
     background-position: center;
-    animation: backgroundImageFade 40s infinite;
-    transition: opacity 1s;
 }
 
-@keyframes backgroundImageFade {
-    0% {
-        background-image: url("/assets/images/starry_night.jpg");
-        opacity: 1;
-    }
-    33% {
-        background-image: url("/assets/images/starry_night_city.jpg");
-        opacity: 1;
-    }
-    66% {
-        background-image: url("/assets/images/Wheat_Field_with_Crows.jpg");
-        opacity: 1;
-    }
-    100% {
-        background-image: url("/assets/images/starry_night.jpg");
-        opacity: 1;
-    }
-}
 
 .content {
     position: relative;
@@ -81,4 +61,17 @@ footer {
     border-radius: 10px;
     max-width: 800px;
     margin: 50px auto;
+    box-sizing: border-box; /* Upewnij się, że padding nie powiększa kontenera */
+    overflow: hidden;      /* Ukryj wszystko, co wyjdzie poza kontener */
 }
+
+img {
+    max-width: 100%;
+    max-height: 50vh;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    object-fit: contain; /* Dopasowanie obrazu bez rozciągania */
+}
+

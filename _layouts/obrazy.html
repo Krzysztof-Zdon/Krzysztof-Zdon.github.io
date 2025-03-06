@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/obrazy.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="content">
+    	<header>
+    	<h1>{{ page.title }}</h1>
+        <nav>
+            <a href="/">Strona główna</a>
+            <a href="/lista.html">Lista obrazów</a>
+        </nav>
+    	</header>
+    	<main>
+        	{{ content }}
+    	</main>
+    </div>
+    <footer>
+       	<p>Autor: Krzysztof Zdon, email: zdonkrzysztof@gmail.com</p>
+    </footer>
+</body>
+</html>
