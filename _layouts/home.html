@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/mainout.css">
 </head>
-<body>
+<body class="bg-gray-100 text-gray-800 font-sans m-0 p-0">
     <div class="background"></div>
-    <div class="content">
-    	<header>
-        <h1>{{ page.title }}</h1>
-        <nav>
-            <a href="/">Strona główna</a>
-            <a href="/lista.html">Lista obrazów</a>
+    <div class="relative z-[1] p-5 text-white text-center font-sans bg-black/50 rounded-[10px] max-w-[800px] my-[50px] mx-auto overflow-hidden">
+    	<header class="bg-yellow-400 p-5 text-center rounded-[10px]">
+    	<h1 class="font-[cursive] text-2xl">{{ page.title }}</h1>
+        <nav class="flex justify-center gap-4 text-lg">
+            <a href="/" class="text-stone-700 font-bold">Strona główna    </a>
+            <a href="/lista.html" class="text-stone-700 font-bold">Lista obrazów</a>
+            <a href="/kal.html" class="relative inline-block text-stone-700 font-bold">Impresjonizm <span class="absolute top-[-9px] right-[-55px] text-xs bg-red-500 text-white px-2 py-1 rounded-full animate-pulse">Nowość</span></a>
         </nav>
     	</header>
     	<main>

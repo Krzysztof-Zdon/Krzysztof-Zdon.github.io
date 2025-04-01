@@ -3,24 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/obrazy.css">
+    <link rel="stylesheet" href="/assets/css/obrazyout.css">
 </head>
-<body>
+<body class="bg-black-100 font-sans m-0 p-0">
     <div class="background"></div>
-    <div class="content">
-    	<header>
-    	<h1>{{ page.title }}</h1>
+    <div class="shadow-xl relative z-[1] p-5 text-center font-sans rounded-[10px] max-w-[800px] my-[50px] mx-auto overflow-hidden">
+    	<header class="bg-yellow-400 p-5 text-center rounded-[10px]">
+    	<h1 class="font-[cursive] text-2xl text-white">{{ page.title }}</h1>
         <nav>
-            <a href="/">Strona główna</a>
-            <a href="/lista.html">Lista obrazów</a>
+            <a href="/" class="text-stone-700 font-bold">Strona główna</a>
+            <a href="/lista.html" class="text-stone-700 font-bold">Lista obrazów</a>
         </nav>
     	</header>
-    	<main>
+    	<main class="text-black">
         	{{ content }}
     	</main>
     </div>
-    <footer>
+    <footer class="text-black">
        	<p>Autor: Krzysztof Zdon, email: zdonkrzysztof@gmail.com</p>
     </footer>
 </body>

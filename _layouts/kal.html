@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/mainout.css">
+</head>
+<body class="text-gray-800 font-sans m-0 p-0 bg-[url('/assets/images/kwitnący_migdałowiec_(1888-1890).jpg')] bg-cover bg-center">
+    <header class="bg-yellow-400 p-3 text-center">
+    <h1 class="text-white font-[cursive] text-2xl">Impresjonizm</h1>
+    <nav class="flex justify-center gap-4 text-lg">
+        <a href="/index.html" class="text-stone-700 font-bold">Strona główna</a>
+    </nav>
+    </header>
+    <main class="flex flex-col items-center">
+       	<table class="table-auto border-collapse bg-black/50 text-white rounded-b-lg my-4 p-4">
+       	  <caption class="font-[cursive] bg-black/50 text-white text-xl rounded-t-lg">Kalendarium życia Van Gogha</caption>
+  	  <thead>
+  	    <tr>
+  	      <th>Data</th>
+  	      <th>Wydarzenie</th>
+  	    </tr>
+  	  </thead>
+  	  <tbody>
+  	     <tr>
+  	      <th>30 marca 1853</th>
+  	      <th>Vincent Willem van Gogh urodził się w Groot-Zundert w Holandii jako syn pastora Theodorusa van Gogha i Anny Cornelii z domu Carbentus.</th>
+  	    </tr>
+  	    <tr>
+  	      <th>1864</th>
+  	      <th>Rozpoczyna naukę w szkole z internatem w Zevenbergen.</th>
+  	    </tr>
+  	    <tr>
+  	      <th>1869</th>
+  	      <th>Podejmuje pracę w firmie handlującej dziełami sztuki Goupil & Cie w Hadze.</th>
+  	    </tr>
+  	    <tr>
+  	      <th>1876</th>
+  	      <th>Rezygnuje z pracy w Goupil & Cie i podejmuje próbę kariery nauczyciela oraz kaznodziei w Anglii.</th>
+  	    </tr>
+  	    <tr>
+  	      <th>1879</th>
+  	      <th>Pracuje jako misjonarz w Borinage w Belgii, gdzie zaczyna tworzyć pierwsze rysunki przedstawiające życie górników.</th>
+  	    </tr>
+  	    <tr>
+  	      <th>1880</th>
+  	      <th>Decyduje się na karierę artystyczną i rozpoczyna naukę rysunku oraz malarstwa w Brukseli.</th>
+  	    </tr>
+  	    <tr>
+  	      <th>1885</th>
+  	      <th>Tworzy swoje pierwsze znaczące dzieło "Jedzący kartofle", ukazujące życie chłopów. </th>
+  	    </tr>
+  	    <tr>
+  	      <th>1886</th>
+  	      <th>Przeprowadza się do Paryża, gdzie mieszka z bratem Theo. Zapoznaje się z impresjonistami i zaczyna eksperymentować z jaśniejszą paletą barw.</th>
+  	    </tr>
+  	    <tr>
+  	      <th>1888</th>
+  	      <th>Przenosi się do Arles na południu Francji, gdzie tworzy wiele znanych dzieł, takich jak "Słoneczniki".</th>
+  	    </tr>
+  	    <tr>
+  	      <th>1889</th>
+  	      <th>Po epizodzie samookaleczenia trafia do szpitala psychiatrycznego w Saint-Rémy, gdzie kontynuuje malowanie, tworząc m.in. "Gwiaździstą noc".</th>
+  	    </tr>
+  	    <tr>
+  	      <th>1890</th>
+  	      <th>Przeprowadza się do Auvers-sur-Oise pod opiekę doktora Paula Gacheta. 27 lipca strzela do siebie; umiera dwa dni później, 29 lipca.</th>
+  	    </tr>
+  	  </tbody>
+	</table>
+	
+	<h1 class="font-[cursive] bg-black/50 text-white text-2xl animate-bounce mt-4 rounded-[5px] p-1"> Wybitni przedstawiciele impresjonizmu - o ile ubożsi bylibyśmy bez nich... </h1>
+	
+	<div class="w-full overflow-x-auto mt-6 no-scrollbar">
+	  <div class="flex flex-none space-x-4 p-2">
+	    <div class="w-150 h-100 text-white flex flex-auto items-center rounded-lg bg-black/50 text-white shrink-0 p-2">{{ page.Monet }} <img src="/assets/images/Claude_Monet.jpg" class="w-[165px] h-[200px] object-cover"></div>
+	    <div class="w-150 h-100 text-white flex flex-col items-center rounded-lg bg-black/50 text-white shrink-0 p-2">{{ page.Podkowinski }} <img src="/assets/images/WladyslawPodkowinski.jpg" class="w-[231px] h-[250px] object-cover"></div>
+	    <div class="w-150 h-100 text-white flex flex-auto items-center rounded-lg bg-black/50 text-white shrink-0 p-2">{{ page.Debussy }} <img src="/assets/images/Claude_Debussy.jpg" class="w-[195px] h-[250px] object-cover"></div>
+	    <div class="w-150 h-100 text-white flex flex-col items-center rounded-lg bg-black/50 text-white shrink-0 p-2">{{ page.Reymont }} <img src="/assets/images/Władysław_Reymont.jpg" class="w-[205px] h-[250px] object-cover"></div>
+	    <div class="w-150 h-100 text-white flex flex-auto items-center rounded-lg bg-black/50 text-white shrink-0 p-2">{{ page.Szymanowski }} <img src="/assets/images/Karol_Szymanowski.jpg" class="w-[225px] h-[250px] object-cover"></div>
+	  </div>
+	</div>
+    </main>
+    <footer>
+       	<p>Autor: Krzysztof Zdon, email: zdonkrzysztof@gmail.com</p>
+    </footer>
+    <script src="/assets/js/background.js"></script>
+</body>
+</html>

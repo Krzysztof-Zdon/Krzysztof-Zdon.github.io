@@ -3,23 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/mainout.css">
 </head>
-<body>
+<body class="bg-gray-100">
     <div class="background"></div>
-    <div class="content">
-    	<header>
-        <h1>{{ page.title }}</h1>
-        <nav>
-            <a href="/index.html">Strona główna</a>
+    <div class="relative z-[1] p-5 text-white text-center font-sans bg-black/50 rounded-[10px] max-w-[800px] my-[50px] mx-auto overflow-hidden">
+    	<header class="bg-yellow-400 p-5 text-center rounded-[10px]">
+        <h1 class="font-[cursive] text-2xl">{{ page.title }}</h1>
+        <nav class="flex justify-center gap-4 text-lg">
+            <a href="/index.html" class="text-stone-700 font-bold">Strona główna</a>
         </nav>
     	</header>
-    	<main>
-        	{{ content }}
+    	<main class="flex flex-col">
+        	<h2 class="font-[cursive] text-grey-600 hover:text-red-800 text-2xl">{{ page.SectionTitle1 | markdownify }}</h2>
+        	<div class="prose p-4">{{ page.SectionText1 | markdownify }}</div>
+        	<h2 class="font-[cursive] text-grey-600 hover:text-red-800 text-2xl">{{ page.SectionTitle2 | markdownify }}</h2>
+        	<div class="prose p-4">{{ page.SectionText2 | markdownify }}</div>
+        	<h2 class="font-[cursive] text-grey-600 hover:text-red-800 text-2xl">{{ page.SectionTitle3 | markdownify }}</h2>
+        	<div class="prose p-4">{{ page.SectionText3 | markdownify }}</div>
+        	<h2 class="font-[cursive] text-grey-600 hover:text-red-800 text-2xl">{{ page.SectionTitle4 | markdownify }}</h2>
+        	<div class="prose p-4">{{ page.SectionText4 | markdownify }}</div>
+        	<h2 class="font-[cursive] text-grey-600 hover:text-red-800 text-2xl">{{ page.SectionTitle5 | markdownify }}</h2>
+        	<div class="prose p-4">{{ page.SectionText5 | markdownify }}</div>
+        	<h2 class="font-[cursive] text-grey-600 hover:text-red-800 text-2xl">{{ page.SectionTitle6 | markdownify }}</h2>
+        	<div class="prose p-4">{{ page.SectionText6 | markdownify }}</div>
+        	<h2 class="font-[cursive] text-grey-600 hover:text-red-800 text-2xl">{{ page.SectionTitle7 | markdownify }}</h2>
+        	<div class="prose p-4">{{ page.SectionText7 | markdownify }}</div>
+        	<h2 class="font-[cursive] text-grey-600 hover:text-red-800 text-2xl">{{ page.SectionTitle8 | markdownify }}</h2>
+        	<div class="prose p-4">{{ page.SectionText8 | markdownify }}</div>
+        	<h2 class="font-[cursive] text-grey-600 hover:text-red-800 text-2xl">{{ page.SectionTitle9 | markdownify }}</h2>
+        	<div class="prose p-4">{{ page.SectionText9 | markdownify }}</div>
+        	<h2 class="font-[cursive] text-grey-600 hover:text-red-800 text-2xl">{{ page.SectionTitle10 | markdownify }}</h2>
+        	<div class="prose p-4">{{ page.SectionText10 | markdownify }}</div>
+        	<h2 class="font-[cursive] text-grey-600 hover:text-red-800 text-2xl">{{ page.SectionTitle11 | markdownify }}</h2>
+        	<div class="prose p-4">{{ page.SectionText11 | markdownify }}</div>
     	</main>
     </div>
-    <footer>
+    <footer class="text-black">
        	<p>Autor: Krzysztof Zdon, email: zdonkrzysztof@gmail.com</p>
     </footer>
     <script src="/assets/js/background.js"></script>
