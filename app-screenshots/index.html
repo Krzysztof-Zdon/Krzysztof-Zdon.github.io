@@ -34,6 +34,7 @@
             transition: transform 0.3s ease;
             display: block;
             margin: 0 auto;
+            loading: lazy;
         }
         .gallery img:hover {
             transform: translateY(-6px);
@@ -57,32 +58,34 @@
             }
         }
     </style>
-    <script>
-        function restartGif(gifId) {
-            const gif = document.getElementById(gifId);
-            const src = gif.src.split('?')[0];
-            gif.src = src + '?' + new Date().getTime();
-        }
-    </script>
 </head>
 <body>
     <div class="container">
         <h1>Screeny mojej aplikacji</h1>
         <div class="gallery">
-            <img src="Ekran_logowania.png" alt="Screen 1">
-            <img src="menu_główne.png" alt="Screen 2">
-            <img src="Tworzenie_trasy.png" alt="Screen 3">
-            <img src="Pusta_trasa.png" alt="Screen 4">
-            <img src="Dodane_punkty_na_mapę.png" alt="Screen 5">
-            <img src="Pomyślne_usunięcie_punktów.png" alt="Screen 6">
-            <img src="Tło_Narnia.png" alt="Screen 7">
-            <img src="Tło_wiedźmin.png" alt="Screen 8">
+            <img src="Ekran_logowania.png" alt="Screen 1" loading="lazy">
+            <img src="menu_główne.png" alt="Screen 2" loading="lazy">
+            <img src="Tworzenie_trasy.png" alt="Screen 3" loading="lazy">
+            <img src="Pusta_trasa.png" alt="Screen 4" loading="lazy">
+            <img src="Dodane_punkty_na_mapę.png" alt="Screen 5" loading="lazy">
+            <img src="Pomyślne_usunięcie_punktów.png" alt="Screen 6" loading="lazy">
+            <img src="Tło_Narnia.png" alt="Screen 7" loading="lazy">
+            <img src="Tło_wiedźmin.png" alt="Screen 8" loading="lazy">
         </div>
         <div class="animation">
             <h2>Przykładowa animacja GIF</h2>
-            <img src="LOTR.gif" alt="Animacja aplikacji" id="gifAnimation" onclick="restartGif('gifAnimation')">
+            <img src="LOTR.gif" alt="Animacja aplikacji" id="gifAnimation" loading="eager">
             <p>Kliknij na GIF, aby odtworzyć go ponownie.</p>
         </div>
     </div>
+    <script defer>
+        document.addEventListener('DOMContentLoaded', function() {
+            var gif = document.getElementById('gifAnimation');
+            gif.addEventListener('click', function() {
+                var src = gif.src.split('?')[0];
+                gif.src = src + '?' + Date.now();
+            });
+        });
+    </script>
 </body>
 </html>
