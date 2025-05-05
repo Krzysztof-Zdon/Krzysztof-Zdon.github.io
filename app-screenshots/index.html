@@ -22,12 +22,12 @@
         }
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(900px, 1fr)); 
+            grid-template-columns: repeat(2, 1fr);
             gap: 2rem;
         }
         .gallery img {
             width: 100%;
-            max-width: 1000px;
+            max-width: 1200px;
             height: auto;
             border-radius: 8px;
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
@@ -48,20 +48,19 @@
             border-radius: 8px;
             cursor: pointer;
         }
-        /* Responsywność */
-        @media (max-width: 900px) {
+        @media (max-width: 1200px) {
             .gallery {
-                grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+                grid-template-columns: 1fr; 
             }
             .gallery img {
-                max-width: 100%;
+                max-width: 95%;
             }
         }
     </style>
     <script>
         function restartGif(gifId) {
             const gif = document.getElementById(gifId);
-            const src = gif.src.split('?')[0];]
+            const src = gif.src.split('?')[0];
             gif.src = src + '?' + new Date().getTime();
         }
     </script>
