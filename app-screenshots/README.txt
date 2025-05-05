@@ -3,4 +3,4 @@ zakładanie konta,
 logowanie, 
 tworzenie tras, 
 dodawanie i usuwanie punktów,
-creme de la creme, czyli tworzenie GIF-ów.
+creme de la creme, czyli tworzenie GIF-ów na podstawie aktualnie wypełnionej trasy.
