@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screeny aplikacji Django - Krzysztof Zdon</title>
+    <style>
+        /* Podstawowe style */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9fb;
+            color: #333;
+            margin: 0;
+            padding: 2rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        /* Galeria screenów */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .gallery img:hover {
+            transform: translateY(-4px);
+        }
+        /* Sekcja animacji GIF */
+        .animation {
+            text-align: center;
+            margin-top: 2.5rem;
+        }
+        .animation img {
+            max-width: 100%;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Screeny mojej aplikacji</h1>
+        <div class="gallery">
+            <img src="Ekran_logowania.png" alt="Screen 1">
+            <img src="menu_główne.png" alt="Screen 2">
+            <img src="Tworzenie_trasy.png" alt="Screen 3">
+            <img src="Pusta_trasa.png" alt="Screen 4">
+            <img src="Dodane_punkty_na_mapę.png" alt="Screen 5">
+            <img src="Pomyślne_usunięcie_punktów.png" alt="Screen 6">
+            <img src="Tło_Narnia.png" alt="Screen 7">
+            <img src="Tło_Wiedźmin.png" alt="Screen 8">
+        </div>
+        <div class="animation">
+            <h2>Przykładowa animacja GIF</h2>
+            <img src="LOTR.gif" alt="Animacja aplikacji">
+        </div>
+    </div>
+</body>
+</html>
