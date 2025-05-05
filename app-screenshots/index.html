@@ -22,16 +22,18 @@
         }
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(700px, 1fr)); 
             gap: 2rem;
         }
         .gallery img {
             width: 100%;
+            max-width: 800px;
             height: auto;
             border-radius: 8px;
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
             transition: transform 0.3s ease;
-            loading: lazy;
+            display: block;
+            margin: 0 auto;
         }
         .gallery img:hover {
             transform: translateY(-6px);
@@ -44,14 +46,23 @@
             max-width: 90%;
             border: 2px solid #ddd;
             border-radius: 8px;
+            cursor: pointer;
+        }
+        /* Responsywność */
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            }
+            .gallery img {
+                max-width: 100%;
+            }
         }
     </style>
     <script>
         function restartGif(gifId) {
             const gif = document.getElementById(gifId);
-            const src = gif.src;
-            gif.src = '';
-            gif.src = src;
+            const src = gif.src.split('?')[0];]
+            gif.src = src + '?' + new Date().getTime();
         }
     </script>
 </head>
@@ -59,14 +70,14 @@
     <div class="container">
         <h1>Screeny mojej aplikacji</h1>
         <div class="gallery">
-            <img src="Ekran_logowania.png" alt="Screen 1" loading="lazy">
-            <img src="menu_główne.png" alt="Screen 2" loading="lazy">
-            <img src="Tworzenie_trasy.png" alt="Screen 3" loading="lazy">
-            <img src="Pusta_trasa.png" alt="Screen 4" loading="lazy">
-            <img src="Dodane_punkty_na_mapę.png" alt="Screen 5" loading="lazy">
-            <img src="Pomyślne_usunięcie_punktów.png" alt="Screen 6" loading="lazy">
-            <img src="Tło_Narnia.png" alt="Screen 7" loading="lazy">
-            <img src="Tło_wiedźmin.png" alt="Screen 8" loading="lazy">
+            <img src="Ekran_logowania.png" alt="Screen 1">
+            <img src="menu_główne.png" alt="Screen 2">
+            <img src="Tworzenie_trasy.png" alt="Screen 3">
+            <img src="Pusta_trasa.png" alt="Screen 4">
+            <img src="Dodane_punkty_na_mapę.png" alt="Screen 5">
+            <img src="Pomyślne_usunięcie_punktów.png" alt="Screen 6">
+            <img src="Tło_Narnia.png" alt="Screen 7">
+            <img src="Tło_wiedźmin.png" alt="Screen 8">
         </div>
         <div class="animation">
             <h2>Przykładowa animacja GIF</h2>
