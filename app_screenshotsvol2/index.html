@@ -1,1 +1,52 @@
-Siema czarnuchy!
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prezentacja aplikacji - Krzysztof Zdon</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9fb;
+            color: #333;
+            margin: 0;
+            padding: 2rem;
+        }
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        .video-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 3rem;
+        }
+        video {
+            width: 100%;
+            max-width: 1200px;
+            border-radius: 8px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        @media (max-width: 1200px) {
+            video {
+                max-width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="video-section">
+            <video controls autoplay muted>
+                <source src="app_demo.mp4" type="video/mp4">
+                Twój przeglądarka nie obsługuje wideo HTML5.
+            </video>
+        </div>
+    </div>
+</body>
+</html>
